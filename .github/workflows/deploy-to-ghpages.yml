@@ -35,8 +35,8 @@ jobs:
       - name: 🧪 Test
         run: npm run test
 
-      - name: 📚 Build documentation
-        run: npm run build:doc
+      - name: 📚 Build documentation & application
+        run: npm run build
 
       - name: 🚀 Deploy
         uses: peaceiris/actions-gh-pages@v4
