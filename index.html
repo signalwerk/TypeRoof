@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="canonical" href="./legacy">
+        <noscript>
+            <!--
+            This is intentionally not used by default at the moment,
+            as the JS redirect below can preserve the location hash,
+            which is used to transport app-state.
+            -->
+            <meta http-equiv="refresh" content="0; url=./legacy">
+        </noscript>
+        <script type="text/javascript">
+            let hash = window.location.search || window.location.hash;
+            if(hash && !hash.startsWith('#'))
+                hash = `#${hash}`;
+            window.location.href = `./legacy${hash}`
+        </script>
+        <title>Page Redirection</title>
+    </head>
+    <body>
+        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
+        <h1>TypeRoof-legacy / Video Proof has moved!</h1>
+        <p>If you are not redirected automatically, follow this <a href='./legacy'>link to TypeRoof-legacy</a>.</p>
+    </body>
+</html>
