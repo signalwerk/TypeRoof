@@ -11,6 +11,7 @@
 
 # But don't ignore these specific files/patterns
 !eslint.config.mjs
+!vite.config.js
 !README.md
 !**/*.jsx
 !**/*.tsx 
